@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:todo/layout/widget_tree.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -11,11 +13,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'To Do app',
       theme: ThemeData(
-        colorScheme: .fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
       ),
-      home: ,
+      home: WidgetTree(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
